@@ -17,7 +17,7 @@ public class Usuario {
     @NotNull(message = "El nombre de usuario no puede ser nulo")
     @NotBlank(message = "El nombre de usuario es obligatorio")
     @Size(min = 4,max = 20,message = "El nombre de usuario debe de ser de mas de 4 caracteres")
-    @Column(nullable = false,length = 30)
+    @Column(name = "nickname",nullable = false,length = 30)
     private String nombreUsuario;
 
     @NotNull
